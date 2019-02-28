@@ -5,27 +5,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomeActivity extends AppCompatActivity {
+public class FindActivity extends AppCompatActivity {
 
-    Intent findActivity;
-    Intent listActivity;
+    Intent homeActivity, listActivity;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_find);
 
-        findActivity = new Intent(this, FindActivity.class);
+        //inite
+        homeActivity = new Intent(this, HomeActivity.class);
         listActivity = new Intent(this, ListActivity.class);
 
+
     }
 
-    public void findButtonClick(View view) {
-        startActivity(findActivity);
+    public void homeOnClick(View view) {
+        startActivity(homeActivity);
     }
 
-    public void listButtonClick(View view) {
+    public void listOnClick(View view) {
         startActivity(listActivity);
     }
 }
