@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.FirebaseApp;
+
 public class SplashActivity extends AppCompatActivity {
 
 
@@ -15,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        FirebaseApp.initializeApp(this);
 
         //Inits
         homeActivity = new Intent(this, LoginActivity.class);
