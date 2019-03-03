@@ -42,9 +42,8 @@
                 android:hint="              Search"
                 android:textSize="15sp"
                 android:id="@+id/findEditText"
-                android:textCursorDrawable="@drawable/find_icon"
+               />
 
-                />
             <ImageView
                 android:layout_width="23dp"
                 android:layout_height="23dp"

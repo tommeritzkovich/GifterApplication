@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
         //Inits
-        homeActivity = new Intent(this, HomeActivity.class);
+        homeActivity = new Intent(this, LoginActivity.class);
     }
 
     public void splashButton(View view) {
